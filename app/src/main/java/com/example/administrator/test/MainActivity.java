@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                                 mail = ((EditText) dialogView.findViewById(R.id.mail)).getText().toString().trim();
                                 Cust c = new Cust(nm, address, mail, Integer.parseInt(mob),0);
 
-                                Toast.makeText(getApplicationContext(), "Customer added successfully", Toast.LENGTH_LONG).show();
+                                Toast.makeText(getApplicationContext(), "Customer added successfully" , Toast.LENGTH_LONG).show();
                                 dialog.cancel();
                             }catch (Exception ex){
                                 Log.e("error ",ex.toString());
